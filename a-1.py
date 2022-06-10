@@ -10,6 +10,7 @@ def update():
     with open("users", "wb") as f:
         pickle.dump(users, f)
 
+#sign-up funtction which requires two passwords which both match to succesfully sign-up
 def sign_up():
     username = input("Enter username: ")
     password1 = input("Enter password: ")
@@ -21,6 +22,7 @@ def sign_up():
         users[username] = password1
     update()
 
+#
 def login():
     username = input("Enter username: ")
     password = input("Enter password: ")
