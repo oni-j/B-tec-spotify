@@ -22,7 +22,7 @@ def sign_up():
         users[username] = password1
     update()
 
-#
+#Login function which checks whether the entered password matches the password linked to the username
 def login():
     username = input("Enter username: ")
     password = input("Enter password: ")
