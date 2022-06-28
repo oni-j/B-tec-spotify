@@ -23,6 +23,11 @@ def changeformat(a, b, c):
     c[0] = int(c[0])
     c[1] =  int(c[1])
     c = (c[0] * 60) + c[1]
+    
+    if os.path.exists("lastID"):
+        with open("lastID", "rb") as f:
+             
+        
     return [a, b, c, 0]
 
 def addsong():
