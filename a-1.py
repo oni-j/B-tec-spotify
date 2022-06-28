@@ -12,6 +12,7 @@ def update():
 
 #sign-up funtction which requires two passwords which both match to succesfully sign-up
 def sign_up():
+    userID = 1 + len(IDlist)
     username = input("Enter username: ")
     password1 = input("Enter password: ")
     password2 = input("Re-enter password: ")
@@ -41,4 +42,5 @@ if __name__ == "__main__":
             sign_up()
         else:
             login()
-            
+   
+
