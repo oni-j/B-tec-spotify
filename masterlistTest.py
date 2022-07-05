@@ -5,11 +5,12 @@ import pickle
 
 masterlist = []
 songnumlist = []
+IDList = []
 
 if os.path.exists("masterlistFile"):
     with open("masterlistFile", "rb") as f:
         masterlist = pickle.load(f)
-
+        
 def update():
     with open("masterlistFile", "wb") as f:
         pickle.dump(masterlist, f)
@@ -26,8 +27,8 @@ def changeformat(a, b, c):
     
     if os.path.exists("lastID"):
         with open("lastID", "rb") as f:
-             
-        
+            IDList = pickle.load(f)     
+            SongID = IDList[len(IDList)] + 1
     return [a, b, c, 0]
 
 def addsong():
