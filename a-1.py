@@ -39,7 +39,8 @@ if __name__ == "__main__":
         choice = input()
         if choice == "1":
             sign_up()
-        else:
+        elif choice == "2":
             login()
-   
+        else:
+            print("Please input number 1 or 2.")
 
